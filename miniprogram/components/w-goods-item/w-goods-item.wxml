@@ -1,0 +1,13 @@
+<view class="goods_item">
+  <view class="item_img">
+   <image src="{{goodsItem.show.img}}" mode="widthFix"/>
+  </view>
+  <view class="item_info">
+    <view class="title">{{goodsItem.title}}</view>
+    <view class="info_price">
+      <text class="price">￥{{goodsItem.price}}</text>
+      <image src="/assets/image/common/collect.png" mode="widthFix"/>
+      <text>{{goodsItem.cfav}}</text>
+    </view>
+  </view>
+</view>

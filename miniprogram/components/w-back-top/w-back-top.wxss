@@ -1,0 +1,15 @@
+/* components/w-back-top/w-back-top.wxss */
+
+.back_top{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  position: fixed;
+  right: 20rpx;
+  bottom: 20rpx; 
+}
+.back_top image{
+  height: 100%;
+  width: 100%;
+  /* overflow: hidden; */
+}

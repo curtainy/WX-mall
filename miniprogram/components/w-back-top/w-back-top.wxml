@@ -1,0 +1,4 @@
+<view class="back_top" bind:tap="handleBack">
+  <image src="/assets/image/common/top.png"/>
+</view>
+

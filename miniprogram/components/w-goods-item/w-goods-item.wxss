@@ -1,0 +1,31 @@
+/* components/w-goods-item/w-goods-item.wxss */
+.goods_item{
+  width: 100%;
+}
+.item_img{
+  height: 540rpx;
+}
+.item_img image{
+  width: 100%;
+  border-radius: 10rpx;
+}
+.item_info{
+  font-size: 30rpx;
+}
+.title{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+.info_price{
+    text-align: center;
+}
+.info_price image{
+  width: 30rpx;
+}
+.price{
+  color: #ff5777;
+  margin-right: 15rpx;
+}
+
+

@@ -1,0 +1,46 @@
+<!-- 轮播图 -->
+<swiper class="swiper" autoplay  scroll-x indicator-dots indicator-active-color="#ff5777">
+  <swiper-item class="swiper_item" 
+        wx:for="{{swiperList}}" 
+        wx:key="index">
+      <navigator url="{{item.link}}">
+        <image src="{{item.image}}" mode="widthFix"/>
+      </navigator>        
+  </swiper-item>
+</swiper>
+
+<!-- 好物推荐 -->
+<view class="recommend">
+   <view wx:for="{{recommendList}}" wx:key="index" 
+        class="recom_item">
+         <navigator url="{{item.link}}">
+           <image src="{{item.image}}" mode="widthFix"/>
+           <view>{{item.title}}</view>
+        </navigator>
+  </view>
+</view>
+
+<!-- 本周流行 -->
+<view class="pop">
+  <image src="/assets/image/home/feature.jpg" mode="widthFix"></image>
+</view>
+
+<!-- tab_control -->
+<w-tab-control tabList="{{titles}}"
+               bind:tabClick="tabClick"/>
+
+<w-tab-control tabList="{{titles}}"
+               bind:tabClick="tabClick"
+               class="stay_tab"
+               wx:if="{{isShow}}"
+               />
+
+<!-- 商品展示 -->
+<view class="show">
+  <block wx:for="{{goods[currentType].list}}" wx:key="index">
+    <w-goods-item goodsItem="{{item}}" class="show_item"/>
+  </block>
+</view>
+
+<!-- 回到顶部 -->
+<w-back-top wx:if="{{isShow}}"/>
